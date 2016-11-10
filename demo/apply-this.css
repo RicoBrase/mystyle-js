@@ -1,0 +1,17 @@
+h1 {
+    color: aquamarine;
+}
+
+p {
+    text-decoration: underline;
+    color: blue;
+}
+
+p:hover {
+    color: yellow;
+}
+
+.square {
+    width: 400px !important;
+    background-color: red;
+}

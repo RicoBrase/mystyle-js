@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyStyleJS - Demo</title>
+
+    <style>
+        h1{
+            color: red;
+        }
+
+        p{
+            background-color: black;
+            color: white;
+        }
+
+        div.square {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello World</h1>
+    <p>Some Content, Lorem Ipsum dolor sit.</p>
+
+    <div class="square"></div>
+
+    </br>
+
+    <input type="file" id="css-file" name="files[]" accept="text/css"/>
+    </br>
+    </br>
+    </br>
+    <button type="button" onclick="styleLoader.saveCSS(true)">Save (persistent)</button>
+    </br>
+    <button type="button" onclick="styleLoader.saveCSS(false)">Save (session)</button>
+    </br>
+    </br>
+    <button type="button" onclick="styleLoader.loadCSS()">Load</button>
+    </br>
+    </br>
+    <button type="button" onclick="styleLoader.clearCSS()">Clear</button>
+    </br>
+    <output id="output"></output>
+
+    <script src="../dist/mystyle.min.js"></script>
+
+    <script>
+        var styleLoader = new MyStyleJS('mystylejs');
+        styleLoader.loadCSS();
+
+        function handleFileSelect(evt) {
+            var files = evt.target.files;
+            var output = [];
+            for(var i = 0, f; f = files[i]; i++){
+                var reader = new FileReader();
+                reader.onload = (function(theFile) {
+                   return (e) => {
+                       var span = document.createElement('span');
+                       span.innerHTML = e.target.result;
+                       document.getElementById('output').innerHTML = span.innerHTML;
+
+
+                       styleLoader.loadCSSfromString(e.target.result);
+                   };
+                })(f);
+
+                reader.readAsText(f);
+            }
+        }
+
+        document.getElementById('css-file').addEventListener('change', handleFileSelect, false);
+        document.getElementById('css-file').onclick = function(event) {
+            this.value = null;
+        };
+    </script>
+
+</body>
+</html>
