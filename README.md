@@ -4,7 +4,7 @@ mystyle-js is a simple and lightweight JavaScript library, which enables develop
 
 ## Installation
 
-1. Download the [latest release](https://github.com/RicoBrase/mystyle-js/releases)
+1. Download the [latest release](https://github.com/RicoBrase/mystyle-js/releases/latest)
 2. Drop either the production version (`dist/mystyle.min.js`) or the non-minified development version (`dist/mystyle.js`) into your project folder
 3. Link it in your HTML code (e.g. '<script src="../js/mystyle.min.js"></script>`)
 4. Done!
