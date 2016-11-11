@@ -1,3 +1,9 @@
+//
+// mystyle-js v1.0.0
+// (c) 2016 Rico Brase https://github.com/RicoBrase/mystyle-js
+// License: MIT
+//
+
 const MyStyleJS = class {
 
     constructor (id) {
