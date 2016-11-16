@@ -92,5 +92,13 @@ mystyle.css = "body { background-color: blue; }";
 mystyle.applyCSS();
 ```
 
+## Demo
+There are two ways to view the demo
+* View the most up-to-date demo [here (GitHub Pages)](https://ricobrase.github.io/mystyle-js/demo/)
+* Download/Clone this repository to your computer and open the `demo/index.html` file in your favorite webbrowser.
+
+## Featured
+You use mystyle-js in your project? Feel free to contact me, then I may add you and your project here.
+
 ## License
 [This project is licensed under the MIT License.](LICENSE.md)
