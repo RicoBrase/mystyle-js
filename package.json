@@ -1,0 +1,26 @@
+{
+  "name": "mystyle-js",
+  "version": "1.0.0",
+  "description": "mystyle-js is a simple and lightweight JavaScript library, which enables developers to let their website visitors apply a custom css stylesheet.",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-move-comments-to-top": "^1.0.3",
+    "babel-preset-babili": "^0.0.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-plugin-uglify": "^1.0.2",
+    "uglify-js": "^2.7.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RicoBrase/mystyle-js.git"
+  },
+  "author": "Rico Brase <kontakt@rico-brase.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RicoBrase/mystyle-js/issues"
+  },
+  "homepage": "https://github.com/RicoBrase/mystyle-js#readme"
+}
